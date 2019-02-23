@@ -1,9 +1,9 @@
 
-<!-------------------------------- CARD ----------------------------------------->
 <div class="container">
 
   <div class="row" *ngIf="dish">
 
+  <!-------------------------------- CARD / DESCRIPTION ----------------------------------------->
     <div class="col-12 col-sm-6">
 
       <div class="card">
@@ -22,8 +22,26 @@
 
     </div>
 
+    <!-------------------------------- CARD / COMMENTS ----------------------------------------->
     <div class="col-12 col-sm-6">
-      <p>Display the list of comments here</p>
+      
+      <div class="card">
+
+        <div class="card-body">
+
+          <h5>Comments</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" *ngFor="let comment of dish.comments">
+              <div style="font-weight:600;">{{comment.comment}}</div>
+              <div>{{comment.rating}} Stars</div>
+              <div>-- {{comment.author}}, {{comment.date | date: 'MMM. dd, yyyy'}}</div>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
     </div>
 
   </div>
