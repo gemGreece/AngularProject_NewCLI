@@ -30,12 +30,15 @@
         <div class="card-body">
 
           <h5>Comments</h5>
+
           <ul class="list-group list-group-flush">
+
             <li class="list-group-item" *ngFor="let comment of dish.comments">
               <div style="font-weight:600;">{{comment.comment}}</div>
               <div>{{comment.rating}} Stars</div>
               <div>-- {{comment.author}}, {{comment.date | date: 'MMM. dd, yyyy'}}</div>
             </li>
+            
           </ul>
 
         </div>
