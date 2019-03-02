@@ -123,7 +123,7 @@ export const DISHES: Dish[] = [
         author: 'John Smith',
         comment: 'Nice combination!',
         rating: 5,
-        date: '2018-03-02T17:10:13.231Z'
+        date: '2018-06-02T17:10:13.231Z'
       },
       {
         author: 'Anna Dark',
@@ -142,6 +142,42 @@ export const DISHES: Dish[] = [
         comment: 'Wish I had more!',
         rating: 5,
         date: '2018-03-03T18:59:14.590Z'
+      }
+    ]
+  },
+  {
+    id: 4,
+    name: '100% DARK CHOCOLATE',
+    image: '/assets/images/totalDark100.png',
+    category: 'darks',
+    label: 'New',
+    price: '6.99',
+    featured: false,
+    description: 'Totally dark chocolate with very strong flavor, made with a range of cocoa beans.',
+    comments: [
+      {
+        author: 'John Smith',
+        comment: 'A different experience',
+        rating: 3,
+        date: '2018-06-23T17:11:13.231Z'
+      },
+      {
+        author: 'Anna Dark',
+        comment: 'Amazing! Just try it!',
+        rating: 5,
+        date: '2018-06-23T18:28:06.516Z'
+      },
+      {
+        author: 'Alice Coper',
+        comment: 'I would say that you should try it even if you prefer milk chocolate. The taste is unique.',
+        rating: 5,
+        date: '2018-06-23T18:29:56.380Z'
+      },
+      {
+        author: 'Natassa ReZum',
+        comment: 'Too bitter for my taste!',
+        rating: 1,
+        date: '2018-06-24T18:59:14.590Z'
       }
     ]
   }
