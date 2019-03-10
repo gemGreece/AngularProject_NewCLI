@@ -14,7 +14,7 @@ export const LEADERS: Leader[] = [
     id: 1,
     name: 'Myriam Brownstone',
     image: '/assets/images/girl.jpg',
-    designation: ' Chief Financial Officer ',
+    designation: 'Chief Financial Officer ',
     abbr: 'CFO',
     featured: false,
     description: 'Myriam Brownstone is the CFO of our company. She is responsible for all the financial decisions of our company.'
