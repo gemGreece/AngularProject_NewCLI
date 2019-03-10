@@ -17,7 +17,7 @@
 
     <div class="media" *ngFor="let dish of dishes" [routerLink]="['/dishdetail', dish.id]">
 
-      <img class=" img-thumbnail align-self-end" src={{dish.image}} alt={{dish.name}}>
+      <img class=" img-thumbnail align-self-end" src="{{BaseURL + dish.image}}" alt={{dish.name}}>
 
       <div class="media-body">
 
@@ -27,7 +27,7 @@
         </h5>
 
         <p class="col d-none d-sm-block">
-          {{dish.description }}
+          {{dish.description}}
         </p>
 
       </div>
