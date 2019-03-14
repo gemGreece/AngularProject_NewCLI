@@ -17,7 +17,7 @@ export class ContactComponent implements OnInit {
 
   feedbackForm: FormGroup;
   fb: Feedback;
-
+  
  // ------------------------------------------------------------------------------------------
 
   constructor(private feedbackService: FeedbackService,
@@ -40,9 +40,13 @@ export class ContactComponent implements OnInit {
   }
 
   onSubmitFeedback() {
+    
     this.fb = this.feedbackForm.value;
+    this.fb.date = new Date().toISOString();
+
     console.log(this.fb);
     this.feedbacks.push(this.fb);
+
     this.feedbackService.addFeedbacks(this.fb).subscribe();
     this.feedbackForm.reset({
       firstname: '',
